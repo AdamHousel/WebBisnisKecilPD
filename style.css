@@ -167,3 +167,50 @@ button:hover {
 .whatsapp-btn:hover {
     background-color: #006d2c;
 }
+/* Tombol Umum */
+button, .whatsapp-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan awal */
+}
+
+/* Efek tombol utama */
+button {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    color: white;
+    box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.whatsapp-btn {
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+    color: white;
+    box-shadow: 0px 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+/* Efek Hover (Tombol membesar dan bercahaya) */
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #218838, #1a682b);
+    box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1ebe5d, #108d42);
+    box-shadow: 0px 8px 20px rgba(37, 211, 102, 0.6);
+}
+
+/* Efek Klik */
+button:active, .whatsapp-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
