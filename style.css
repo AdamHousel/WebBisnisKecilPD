@@ -1,0 +1,131 @@
+/* Mengatur tampilan dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: center;  /* Tengahkan menu */
+    align-items: center;
+    gap: 15px;  /* Jarak antar menu */
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4a261; /* Warna saat hover */
+}
+
+/* Pastikan tetap horizontal di HP */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: nowrap;  /* Jangan biarkan turun ke bawah */
+        overflow-x: auto;  /* Scroll jika terlalu panjang */
+        padding: 10px;
+        white-space: nowrap; /* Cegah teks turun */
+    }
+}
+
+/* Section */
+section {
+    padding: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Responsiveness untuk layar kecil (HP) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+/* Tombol WhatsApp */
+.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+}
