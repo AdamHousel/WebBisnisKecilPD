@@ -4,14 +4,15 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #0077bffe;
+    background: linear-gradient(to bottom, #0077bffe, #004466);
 }
 
-/* Header dengan gradasi ke transparan */
+/* Header dengan gradasi lebih smooth */
 header {
-    background: linear-gradient(to bottom, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.95), rgba(51, 51, 51, 0.3));
     color: #ffffff;
     padding: 40px 20px;
+    backdrop-filter: blur(5px);
 }
 
 /* Navigation Menu */
@@ -20,73 +21,49 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background: rgba(0, 0, 0, 0.3);  /* Tambahkan sedikit transparansi agar teks terlihat */
-    padding: 10px 0;
-    backdrop-filter: blur(5px);  /* Efek blur agar lebih modern */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 12px 0;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav a {
-    color: #ffffff;  /* Warna putih agar tetap kontras */
+    color: white;
     text-decoration: none;
     font-size: 16px;
-    padding: 10px 15px;
-    transition: color 0.3s;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);  /* Efek bayangan untuk meningkatkan visibilitas */
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
 nav a:hover {
-    color: #f4a261; /* Warna saat hover */
-}
-
-
-/* Pastikan tetap horizontal di HP */
-@media (max-width: 768px) {
-    nav {
-        flex-wrap: nowrap;  /* Jangan biarkan turun ke bawah */
-        overflow-x: auto;  /* Scroll jika terlalu panjang */
-        padding: 10px;
-        white-space: nowrap; /* Cegah teks turun */
-    }
+    background: rgba(255, 255, 255, 0.2);
+    color: #f4a261;
+    transform: scale(1.1);
 }
 
 /* Section */
 section {
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.95); /* Sedikit transparan agar menyatu */
+    background: rgba(255, 255, 255, 0.97);
     border-radius: 10px;
-    margin: 20px auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
     max-width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0.8));
+    background: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0.7));
     color: white;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsiveness untuk layar kecil (HP) */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 20px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 20px;
-    }
+    padding: 15px;
+    font-size: 14px;
 }
 
 /* Form Styling */
@@ -95,33 +72,42 @@ form {
     flex-direction: column;
     max-width: 400px;
     margin: 20px auto;
-}
-
-label {
-    margin-top: 10px;
-    font-weight: bold;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 input, textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 12px;
+    margin-top: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #28a745;
+    outline: none;
+    transform: scale(1.02);
 }
 
 button {
     margin-top: 15px;
-    padding: 10px;
+    padding: 12px;
     background-color: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #218838;
+    transform: scale(1.05);
 }
 
 /* Tombol WhatsApp */
@@ -129,13 +115,36 @@ button:hover {
     background-color: #25D366;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .whatsapp-btn:hover {
-    background-color: #108d42;
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    form {
+        max-width: 90%;
+    }
 }
