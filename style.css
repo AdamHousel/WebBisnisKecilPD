@@ -14,27 +14,30 @@ header {
     padding: 40px 20px;
 }
 
-/* Navigation Menu tetap transparan agar menyatu */
+/* Navigation Menu */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);  /* Tambahkan sedikit transparansi agar teks terlihat */
     padding: 10px 0;
+    backdrop-filter: blur(5px);  /* Efek blur agar lebih modern */
 }
 
 nav a {
-    color: #0077bffe;
+    color: #ffffff;  /* Warna putih agar tetap kontras */
     text-decoration: none;
     font-size: 16px;
     padding: 10px 15px;
     transition: color 0.3s;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);  /* Efek bayangan untuk meningkatkan visibilitas */
 }
 
 nav a:hover {
     color: #f4a261; /* Warna saat hover */
 }
+
 
 /* Pastikan tetap horizontal di HP */
 @media (max-width: 768px) {
