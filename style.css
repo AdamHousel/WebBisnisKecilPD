@@ -124,7 +124,7 @@ input::placeholder, textarea::placeholder {
 
 /* Label */
 label {
-    text-align: left; /* Biar label tetap rata kiri */
+    text-align: center; /* Biar label tetap rata kiri */
     font-weight: bold;
     color: white;
     margin-top: 10px;
