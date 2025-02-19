@@ -44,15 +44,17 @@ nav a:hover {
 }
 
 /* Section */
+/* Section */
 section {
     padding: 50px;
-    background: rgba(255, 255, 255, 0.97);
+    background: transparent; /* Ubah menjadi transparan */
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     margin: 30px auto;
     max-width: 90%;
-    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px); /* Tambahkan blur agar lebih halus */
+    color: white; /* Pastikan teks tetap kontras */
 }
+
 
 section:hover {
     transform: scale(1.02);
