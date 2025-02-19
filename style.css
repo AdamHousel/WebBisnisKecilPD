@@ -90,26 +90,36 @@ footer {
 }
 
 /* Form Styling */
+/* Form Container */
 form {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     margin: 20px auto;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparan agar terlihat lebih jelas */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Efek blur untuk kesan modern */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tambahkan sedikit shadow */
 }
 
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
+/* Input Fields */
 input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Garis batas lebih halus */
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparan */
+    color: white; /* Warna teks putih agar mudah dibaca */
 }
 
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Warna placeholder lebih terang */
+}
+
+/* Button */
 button {
     margin-top: 15px;
     padding: 10px;
@@ -118,11 +128,14 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: #218838;
 }
+
 
 /* Tombol WhatsApp */
 .whatsapp-btn {
