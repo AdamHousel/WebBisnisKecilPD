@@ -7,24 +7,22 @@ body {
     background-color: #0077bffe;
 }
 
-/* Header */
-/* Header dengan gradasi */
+/* Header dengan gradasi ke transparan */
 header {
-    background: linear-gradient(to bottom, #333, #252525);
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
     color: #ffffff;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-/* Navigation Menu */
+/* Navigation Menu tetap transparan agar menyatu */
 nav {
     display: flex;
-    justify-content: center;  /* Tengahkan menu */
+    justify-content: center;
     align-items: center;
-    gap: 15px;  /* Jarak antar menu */
-    background: linear-gradient(to bottom, #252525, #1d1d1d);
+    gap: 15px;
+    background: transparent;
     padding: 10px 0;
 }
-
 
 nav a {
     color: white;
@@ -51,21 +49,26 @@ nav a:hover {
 /* Section */
 section {
     padding: 50px;
+    background-color: rgba(255, 255, 255, 0.95); /* Sedikit transparan agar menyatu */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
 }
 
 /* Footer */
 footer {
-    background-color: #333333fb;
+    background: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0.8));
     color: white;
     padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
 /* Responsiveness untuk layar kecil (HP) */
 @media screen and (max-width: 768px) {
     header {
-        padding: 10px;
+        padding: 20px;
     }
 
     nav {
@@ -82,6 +85,7 @@ footer {
         padding: 20px;
     }
 }
+
 /* Form Styling */
 form {
     display: flex;
@@ -116,6 +120,7 @@ button {
 button:hover {
     background-color: #218838;
 }
+
 /* Tombol WhatsApp */
 .whatsapp-btn {
     background-color: #25D366;
