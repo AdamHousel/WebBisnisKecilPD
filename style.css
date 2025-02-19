@@ -25,7 +25,7 @@ nav {
 }
 
 nav a {
-    color: rgba(255, 255, 255, 0);
+    color: #0077bffe;
     text-decoration: none;
     font-size: 16px;
     padding: 10px 15px;
@@ -134,5 +134,5 @@ button:hover {
 }
 
 .whatsapp-btn:hover {
-    background-color: #109b48;
+    background-color: #18af55;
 }
