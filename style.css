@@ -8,8 +8,9 @@ body {
 }
 
 /* Header */
+/* Header dengan gradasi */
 header {
-    background-color: #333;
+    background: linear-gradient(to bottom, #333, #252525);
     color: #ffffff;
     padding: 20px;
 }
@@ -20,9 +21,10 @@ nav {
     justify-content: center;  /* Tengahkan menu */
     align-items: center;
     gap: 15px;  /* Jarak antar menu */
-    background-color: #1d1d1d;
+    background: linear-gradient(to bottom, #252525, #1d1d1d);
     padding: 10px 0;
 }
+
 
 nav a {
     color: white;
