@@ -270,3 +270,70 @@ button:active, .whatsapp-btn:active {
 .blog-post a:hover {
     text-decoration: underline;
 }
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0077bffe, #004466);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #f4a261;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e76f51;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box h3 {
+    color: #f4a261;
+}
+
+/* Call to Action */
+.cta {
+    background: linear-gradient(135deg, #004466, #001f3f);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 80%;
+}
