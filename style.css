@@ -337,3 +337,41 @@ button:active, .whatsapp-btn:active {
     margin: 30px auto;
     max-width: 80%;
 }
+/* About Section */
+.about-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* About Features */
+.about-features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    color: #f4a261;
+}
+
+@media screen and (max-width: 768px) {
+    .about-features {
+        flex-direction: column;
+    }
+    .feature {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
