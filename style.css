@@ -233,3 +233,40 @@ button:active, .whatsapp-btn:active {
     transform: scale(0.95);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
+/* Blog Container */
+.blog-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Blog Post */
+.blog-post {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h2 {
+    margin-top: 0;
+    color: #f4a261;
+}
+
+.blog-post p {
+    color: white;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
