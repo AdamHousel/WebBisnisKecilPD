@@ -346,36 +346,22 @@ button:active, .whatsapp-btn:active {
 }
 
 /* About Features */
-/* About Features */
 .about-features {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 50px auto;
+    max-width: 900px;
     flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 20px; /* Tambahkan gap agar antar box ada jarak */
 }
 
 .feature {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px; /* Tambahkan margin bawah agar ada jarak antar box */
 }
-
-@media screen and (max-width: 768px) {
-    .about-features {
-        flex-direction: column;
-        gap: 15px; /* Jarak antar box lebih kecil di layar kecil */
-    }
-    .feature {
-        width: 100%;
-        margin-bottom: 15px; /* Pastikan jarak antar box tetap nyaman di mobile */
-    }
-}
-
 
 .feature h3 {
     color: #f4a261;
