@@ -349,6 +349,8 @@ button:active, .whatsapp-btn:active {
 .about-features {
     display: flex;
     justify-content: space-around;
+    margin: 50px auto;
+    max-width: 900px;
     flex-wrap: wrap;
     margin-top: 20px;
 }
